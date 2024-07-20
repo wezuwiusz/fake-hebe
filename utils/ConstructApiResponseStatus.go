@@ -11,7 +11,7 @@ func ConstructApiResponseStatus(statusCode int) models.ApiResponseStatus {
 	case 101:
 		message = "Żądanie nie zostało prawidłowo związane z oczekiwanym typem"
 	case 102:
-		message = "Brakuje nagłówka vOS"
+		message = "Brakuje nagłówka"
 	}
 
 	return models.ApiResponseStatus{
