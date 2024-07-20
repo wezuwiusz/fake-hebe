@@ -29,7 +29,7 @@ func ConvertGoTypeToCSharpType(typeName reflect.Kind) string {
 	switch typeName {
 	case reflect.Bool:
 		return "Boolean"
-	case reflect.Array:
+	case reflect.Slice:
 		return "IEnumerable`1"
 	default:
 		return typeName.String()
